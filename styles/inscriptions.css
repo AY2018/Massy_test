@@ -1,0 +1,123 @@
+.dummy {
+  color: #888788;
+  color: #19191c;
+  color: #222124;
+  color: #333136;
+  color: #9f8d58;
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.377);
+}
+
+h2 {
+  font-family: 'Electrolize', Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.inscriptionsClosed {
+  background-color: #9f8d58;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 15px;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.inscriptionsClosed h2 {
+  color: #19191c;
+}
+
+.actualite_text_1sLink {
+  text-decoration: underline;
+  color: #19191c;
+}
+
+article {
+  padding: 160px 10%;
+  background-color: #222124;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.inscriptions h1 span {
+  font-size: 2rem;
+  font-style: italic;
+  color: #9f8d58;
+}
+
+.stages_offres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stages_offres figure {
+  width: 70%;
+}
+
+.offers {
+  font-size: 3rem;
+}
+
+.stages_info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contactSecretatiat a {
+  text-decoration: underline;
+  color: #d6bd74;
+}
+
+.linkBrochure {
+  padding: 13px 36px;
+  border-radius: 15px;
+  background-color: #9f8d58;
+  color: #19191c;
+  width: fit-content;
+  margin: auto;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.linkBrochure:hover {
+  filter: brightness(1.5);
+}
+
+@media (max-width: 768px) {
+  .inscriptionsClosed h2,
+  .actualite_text_1sLink {
+    font-size: 1.2rem;
+  }
+
+  .actualite_text_1sLink {
+    overflow-wrap: break-word;
+  }
+
+  .linkBrochure {
+    font-size: 1.3rem;
+  }
+  .stages_info {
+    font-size: 1rem;
+  }
+
+  .stages_offres {
+    flex-direction: column;
+  }
+
+  .stages_offres figure {
+    width: 100%;
+  }
+}

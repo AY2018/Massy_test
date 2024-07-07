@@ -1,0 +1,157 @@
+header{
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #19191c;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    gap: 20px;
+}
+
+.current{
+    color: #9f8d58;
+    filter: brightness(1.5);
+    text-decoration: underline;
+}
+
+header a{
+    font-family: 'Electrolize', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    transition: 0.1s ease-in-out;
+}
+
+header a:hover{
+    color: #9f8d58;
+    filter: brightness(1.2);
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header img{
+    width: 25px;
+}
+.header_medias{
+    gap: 20px;
+}
+
+.nav-menu .fa-x{
+    display: none;
+}
+
+.fa-bars, .fa-bars:before, .fa-navicon:before{
+    display: none !important;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+}
+
+.secondfooter{
+    border-top: 1px solid #888788;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #888788;
+}
+
+footer p{
+    text-align: center;
+}
+
+.secondfooter a{
+    text-decoration: underline;
+    
+}
+
+
+
+@media (max-width: 900px) {
+    .fa-bars, .fa-bars:before, .fa-navicon:before{display: block !important;}
+
+    .nav-menu {
+        background-color: #19191c;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 99999999999999999999;
+        opacity: 0;
+        transition: left 0.5s ease;
+    }
+    
+
+    .nav-menu li a{
+        font-size: 2.5rem;
+    }
+
+    .nav-menu .fa-x{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+    }
+
+    .menuAppear {
+        left: 0;
+        opacity: 1;
+    }
+    
+
+    
+    
+    @keyframes slideIn {
+        to{
+            left: 0;
+        }
+    }
+
+    @keyframes slideOut {
+        to {
+            left: -100%;
+        }
+    }
+    
+    
+    
+
+
+
+    /*Visible nav*/
+    header{
+        height: 100px;
+    }
+    .header_medias{
+        gap: 20px;
+    }
+    .fa-bars, .header_medias li a{
+        font-size: 1.5rem;
+    }
+
+    .header_medias li a img{
+        width: 40px;
+    }
+}
+
+
+@media (max-width: 467px){
+
+    .secondfooter p{
+        font-size: 0.7rem;
+    }
+}
