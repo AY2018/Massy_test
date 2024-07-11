@@ -1,3 +1,7 @@
+# NOtes 
+
+In gallery images. If big image is clicked then different dimensions
+
 # Massy_test 2
 
 
